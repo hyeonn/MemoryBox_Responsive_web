@@ -34,8 +34,8 @@
       <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.mainPage.html">
-    <configuration name="mainNav.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainNav.html" useBuiltInWebServerPort="true">
+  <component name="RunManager">
+    <configuration name="mainPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="mainPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainPage.html" useBuiltInWebServerPort="true">
@@ -44,7 +44,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.mainPage.html" />
-        <item itemvalue="JavaScript Debug.mainNav.html" />
+        <item itemvalue="JavaScript Debug.mainPage.html" />
       </list>
     </recent_temporary>
   </component>
@@ -56,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600126807150</updated>
-      <workItem from="1600126808534" duration="19267000" />
+      <workItem from="1600126808534" duration="19872000" />
     </task>
     <servers />
   </component>
