@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기억저장소</title>
+
+            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+            <style>
+                /*font-family: 'Amatic SC', cursive;*/
+                /*font-family: 'Sacramento', cursive;*/
+                body{
+                    margin: 0;
+
+                }
+                body .container {
+                    display: flex;
+                    margin: 0;
+                    background-image: url("img/subImg.png");
+                    background-repeat: no-repeat;
+                    width: 1519px;
+                    height: 1400px;
+                    background-size: cover;
+                }
+                header{
+                    display: flex;
+                }
+                header h1{
+                    font-family: 'Sacramento', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 60px;
+                    line-height: 102px;
+                    text-align: center;
+                    color: #30252C;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    position: absolute;
+                    left: 41%;
+                    top: 7%;
+
+                }
+                .content{
+                    position: absolute;
+                    width: 1400px;
+                    height: 1170px;
+                    left: 4%;
+                    top: 30%;
+
+                }
+                .content .Rectangle1{
+                    /* Rectangle 1 */
+
+                    position: absolute;
+                    width: 1400px;
+                    height: 1170px;
+
+
+
+                    background: #DBC5C7;
+                    mix-blend-mode: normal;
+                    border: 2px solid #5C5353;
+                    filter: blur(4px);
+                }
+                .content .container{
+                    /* Rectangle 1 */
+
+                    position: absolute;
+                    width: 1400px;
+                    height: 1170px;
+                    left: 4%;
+                    top: 30%;
+
+
+
+
+                }
+                .content h2{
+                    position: absolute;
+                    left: 3%;
+                    top: 25%;
+                    font-family: Amatic SC;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 61px;
+                    text-align: center;
+
+                    color: #5C5353;
+
+                }
+
+
+
+
+
+                . openmenu{
+                    cursor: pointer;
+                    transition:0.5s ease-in-out;
+                }
+                . openmenu:hover{
+                    transition:0.5s ease-in-out;
+                }
+                .navbar{
+                    position: absolute;
+                    width: 0;
+                    height: 1024px;
+                    left: 0px;
+                    top: 0px;
+
+                    background: rgb(126 115 105 / 50%);
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Amatic SC;
+                    font-style: normal;
+                    font-weight: normal;
+                    z-index:1;
+                    overflow-x: hidden;
+                    transition:0.5s ease-in-out;
+                }
+
+                nav h5{
+                    left: 138px;
+                    top: 300px;
+                    font-size: 50px;
+                    text-align: center;
+                    margin-top: 180px;
+                    margin-bottom: 0;
+                    color: rgba(42, 39, 49, 0.73);
+
+
+                }
+                .navbar ul{
+                    padding: 0;
+                    list-style: none;
+                    font-size: 36px;
+                    line-height: 45px;
+                    text-align: center;
+                    left: 138px;
+                    color: #222224;
+                    line-height: 80px;
+                }
+                .navbar ul li a:link{
+                    color: #222224;
+                    text-decoration:none;
+                }
+                .navbar ul li a:hover{
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #D76C76;
+                    text-decoration:none;
+                }
+                .navbar ul li a:visited {
+                    color: #2A2731;
+                    text-decoration: none;
+                }
+
+                .navbar ul li img :hover{
+                    width: 40px;
+                    height: 40px;
+                }
+                .navbar hr{
+                    border: 0.5px solid rgba(55, 49, 67, 0.73);
+                    width: 96px;
+                    margin-top: 1px;
+                }
+                . closebtn
+                {}
+
+                footer{
+                    font-family: 'Sacramento', cursive;
+                    position: absolute;
+                    width: 126px;
+                    height: 53px;
+                    left: 1718px;
+                    top: 900px;
+                    font-size: 36px;
+                    line-height: 53px;
+                }
+                .collect{
+                    margin-top: 0;
+                }
+                .collect ul li a:hover{
+
+                    font-size: 40px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #D76C76;
+                    text-decoration:none;
+                }
+                #menu{
+                    display: block;
+                    position: absolute;
+                    left: 2.43%;
+                    right: 95.49%;
+                    top: 6.84%;
+                    bottom: 90.23%;
+                    width: 25px;
+                    height: 25px;
+                }
+                #close{
+                    display: block;
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    left: 296px;
+                    top: 53px;
+
+                }
+                #arrow{
+
+                    width: 30px;
+                    height: 30px;
+                    line-height: 90px;
+
+                }
+
+                #year{
+
+                }
+
+
+            </style>
+
+        </head>
+<body>
+<div class="container">
+    <header>
+        <a class="openmenu" onclick='openNav()'><img id="menu" src="img/menu.png" ></a>
+        <div id="title">
+            <h1>Memory box</h1>
+        </div>
+    </header>
+<!--  content  -->
+    <section class="content">
+        <div class="Rectangle1">
+        </div>
+
+        <h2>Moments
+            <br><br>
+            of
+            <br><br>
+            2020
+        </h2>
+
+    </section>
+
+
+
+
+
+<!--  navbar  -->
+    <nav class="navbar" id="sidenav">
+        <a  class="closebtn" onclick='closeNav()'><img id="close" src="img/wrong.png" ></a>
+        <h5>menu</h5>
+        <hr>
+        <ul id="year">
+            <img id="arrow" src="img/up-arrow.png" href="#">
+            <li><a href="#">2020</a></li>
+            <li><a href="#">2019</a></li>
+            <li><a href="#">2018</a></li>
+            <li><a href="#">2017</a></li>
+            <img id="arrow" src="img/down-arrow.png">
+        </ul>
+        <ul class="collect">
+            <li><a href="#">best moment</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+
+
+</body>
+<script>
+    function openNav() {
+        document.getElementById('sidenav').style.width = '352px';
+        document.getElementById('menu').style.width = '0px';
+
+    }
+    function closeNav() {
+        document.getElementById('sidenav').style.width = '0';
+        document.getElementById('menu').style.width = '25px';
+
+    }
+</script>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
