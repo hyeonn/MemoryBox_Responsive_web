@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>기억저장소</title>
+    <script type="text/javascript" src="./matchMedia.js"></script>
+    <script type="text/javascript" src="./matchMedia.addListener.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
     <style>
@@ -17,8 +19,8 @@
             margin: 0;
             background-image: url("img/mainNav.png");
             background-repeat: no-repeat;
-            width: 1519px;
-            height: 980px;
+            width: 1513px;
+            height: 985px;
             background-size: cover;
 
 
@@ -50,11 +52,12 @@
         .navbar{
             position: absolute;
             width: 0;
-            height: 1024px;
+            height: 985px;
             left: 0px;
             top: 0px;
 
             background: rgb(126 115 105 / 50%);
+            backdrop-filter: blur(20px);
             display: flex;
             flex-direction: column;
             font-family: Amatic SC;
@@ -127,6 +130,7 @@
         }
         .collect{
             margin-top: 0;
+            margin-bottom: 0;
         }
         .collect ul li a:hover{
 
@@ -164,6 +168,163 @@
         }
 
         #year{
+
+        }
+
+        @media screen and (max-width: 834px) {
+
+            body .container {
+                display: flex;
+                margin: 0;
+                background-image: url("img/main834.png");
+                background-repeat: no-repeat;
+                width: 834px;
+                height: 1188px;
+                background-size: cover;
+
+            }
+
+            header h1{
+                font-family: 'Sacramento', cursive;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 102px;
+                text-align: center;
+                color: #30252C;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                position: absolute;
+                left: 36%;
+                top: 9%;
+
+            }
+
+            #menu{
+                display: block;
+                position: absolute;
+                left: 4%;
+                right: 95.49%;
+                top: 5%;
+                bottom: 90.23%;
+                width: 25px;
+                height: 25px;
+            }
+
+            .navbar{
+                position: absolute;
+                width: 0;
+                height: 1188px;
+                left: 0px;
+                top: 0px;
+
+                background: rgb(126 115 105 / 50%);
+                backdrop-filter: blur(20px);
+                display: flex;
+                flex-direction: column;
+                font-family: Amatic SC;
+                font-style: normal;
+                font-weight: normal;
+                z-index:1;
+                overflow-x: hidden;
+                transition:0.5s ease-in-out;
+            }
+
+            nav h5{
+                left: 138px;
+                top: 300px;
+                font-size: 50px;
+                text-align: center;
+                margin-top: 160px;
+                margin-bottom: 0;
+                color: rgba(42, 39, 49, 0.73);
+
+
+            }
+            .navbar ul{
+                padding: 0;
+                list-style: none;
+                font-size: 36px;
+                line-height: 45px;
+                text-align: center;
+                left: 138px;
+                color: #222224;
+                line-height: 80px;
+            }
+
+
+
+
+
+        }
+
+        @media screen and (max-width: 414px) {
+            body .container {
+                display: flex;
+                margin: 0;
+                background-image: url("img/main414.png");
+                background-repeat: no-repeat;
+                width: 414px;
+                height: 1188px;
+                background-size: cover;
+
+            }
+
+            header h1{
+                font-family: 'Sacramento', cursive;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 102px;
+                text-align: center;
+                color: #30252C;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                position: absolute;
+                left: 25%;
+                top: 9%;
+
+            }
+
+            .navbar{
+                position: absolute;
+                width: 0;
+                height: 736px;
+                left: 0px;
+                top: 0px;
+
+                background: rgb(126 115 105 / 50%);
+                backdrop-filter: blur(20px);
+                display: flex;
+                flex-direction: column;
+                font-family: Amatic SC;
+                font-style: normal;
+                font-weight: normal;
+                z-index:1;
+                overflow-x: hidden;
+                transition:0.5s ease-in-out;
+            }
+
+            nav h5{
+                left: 138px;
+                top: 300px;
+                font-size: 30px;
+                text-align: center;
+                margin-top: 100px;
+                margin-bottom: 0;
+                color: rgba(42, 39, 49, 0.73);
+
+
+            }
+            .navbar ul{
+                padding: 0;
+                list-style: none;
+                font-size: 24px;
+                line-height: 45px;
+                text-align: center;
+                left: 138px;
+                color: #222224;
+                line-height: 80px;
+            }
+
 
         }
 
@@ -205,6 +366,7 @@
 
 </body>
 <script>
+
     function openNav() {
         document.getElementById('sidenav').style.width = '352px';
         document.getElementById('menu').style.width = '0px';
