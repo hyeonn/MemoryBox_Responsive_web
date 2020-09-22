@@ -26,7 +26,7 @@
         header{
             display: flex;
         }
-        header h1{
+        header .title{
             font-family: 'Sacramento', cursive;
             font-style: normal;
             font-weight: normal;
@@ -38,6 +38,7 @@
             position: absolute;
             left: 41%;
             top: 7%;
+            text-decoration:none;
 
         }
         .content{
@@ -198,7 +199,7 @@
             font-size: 40px;
             line-height: 50px;
             text-align: center;
-            color: #D76C76;
+            color: #D76C76 !important;
             text-decoration:none;
         }
         .navbar ul li a:visited {
@@ -286,7 +287,7 @@
                 background-size: cover;
             }
 
-            header h1{
+            header .title{
                 left: 35%;
                 top: 6%;
             }
@@ -415,7 +416,7 @@
                 background-size: cover;
             }
 
-            header h1{
+            header .title{
                 font-family: 'Sacramento', cursive;
                 font-style: normal;
                 font-weight: normal;
@@ -547,7 +548,7 @@
     <header>
         <a class="openmenu" onclick='openNav()'><img id="menu" src="img/menu.png" ></a>
         <div id="title">
-            <h1>Memory box</h1>
+            <a class="title" href="mainPage.html">Memory box</a>
         </div>
     </header>
     <!--  content  -->
@@ -585,7 +586,7 @@
                     <div id="bspace"></div>
                     <div class="toi">
                         <h3>카페 혜화동</h3>
-                        <p>딸기티라미수 존맛탱🍓</p>
+                        <p>딸기는 항상 옳다!<br>딸기티라미수🍓</p>
                     </div>
                 </div>
                 <div class="box">
