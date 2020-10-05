@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5676f0e9-de40-43dd-99e6-f18d12706534" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/youtubeAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2020.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subPage2019.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2019.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,7 +60,7 @@
       <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.test.html">
+  <component name="RunManager" selected="JavaScript Debug.mainPage.html">
     <configuration name="mainPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -71,10 +70,14 @@
     <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/test.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="youtubeAPI.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/youtubeAPI.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.mainPage.html" />
+        <item itemvalue="JavaScript Debug.youtubeAPI.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.mainPage.html" />
       </list>
     </recent_temporary>
@@ -92,7 +95,10 @@
       <workItem from="1600858734187" duration="313000" />
       <workItem from="1600954393982" duration="1067000" />
       <workItem from="1601280303848" duration="2610000" />
-      <workItem from="1601518706795" duration="5964000" />
+      <workItem from="1601518706795" duration="7764000" />
+      <workItem from="1601894006132" duration="5370000" />
+      <workItem from="1601899756203" duration="191000" />
+      <workItem from="1601900145470" duration="3541000" />
     </task>
     <servers />
   </component>

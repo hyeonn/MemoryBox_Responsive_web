@@ -210,8 +210,34 @@
 
         }
 
+        #me{
+            display: block;
+            position: absolute;
+
+            left: 94.8%;
+            top: 6.5%;
+
+            width: 35px;
+            height: 35px;
+        }
+        #play{
+            display: block;
+            position: absolute;
+
+            left: 92%;
+            top: 6.84%;
+            bottom: 90.23%;
+            width: 30px;
+            height: 30px;
+        }
+
+
         #year{
 
+        }
+
+        #ytplayer{
+            display: none;
         }
 
         @media screen and (max-width: 834px) {
@@ -312,7 +338,7 @@
 
             }
 
-            header h1{
+            header h1 {
                 font-family: 'Sacramento', cursive;
                 font-style: normal;
                 font-weight: normal;
@@ -327,7 +353,7 @@
 
             }
 
-            .navbar{
+            .navbar {
                 position: absolute;
                 width: 0;
                 height: 736px;
@@ -341,12 +367,12 @@
                 font-family: Amatic SC;
                 font-style: normal;
                 font-weight: normal;
-                z-index:1;
+                z-index: 1;
                 overflow-x: hidden;
-                transition:0.5s ease-in-out;
+                transition: 0.5s ease-in-out;
             }
 
-            nav h5{
+            nav h5 {
                 left: 138px;
                 top: 300px;
                 font-size: 30px;
@@ -357,7 +383,8 @@
 
 
             }
-            .navbar ul{
+
+            .navbar ul {
                 padding: 0;
                 list-style: none;
                 font-size: 24px;
@@ -367,11 +394,7 @@
                 color: #222224;
                 line-height: 80px;
             }
-
-
-
-
-
+        }
 
 
 
@@ -456,14 +479,22 @@
                     </g>
                 </g>
             </svg>
-
+        </div>
     <header>
+
         <a class="openmenu" onclick='openNav()'><img id="menu" src="img/menu.png" ></a>
             <div id="title">
                 <h1 class="overlay">Memory box</h1>
             </div>
+        <a onclick="playVideo()"><img id="play" src="img/play-button.png" ></a>
+        <a ><img id="me" src="img/rabbit.png" ></a>
+
     </header>
-    </div>
+
+            <div id="ytplayer"></div>
+
+
+
     <nav class="navbar" id="sidenav">
         <a  class="closebtn" onclick='closeNav()'><img id="close" src="img/wrong.png" ></a>
         <h5>menu</h5>
@@ -483,12 +514,35 @@
     </nav>
 
 </div>
+
+
 <footer id="ftr">
     <p>e hyeon lim</p>
 </footer>
 
 
 </body>
+<script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('ytplayer', {
+            height: '360',
+            width: '640',
+            videoId: 'fOiwyjLpuRI'
+        });
+    }
+    function playVideo() {
+        player.playVideo();
+    }
+</script>
 <script>
 
     function openNav() {
@@ -499,6 +553,8 @@
     function closeNav() {
         document.getElementById('sidenav').style.width = '0';
         document.getElementById('menu').style.width = '25px';
+
+
 
     }
 </script>
