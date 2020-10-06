@@ -20,17 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5676f0e9-de40-43dd-99e6-f18d12706534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/TweenMax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subPage2018.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/play.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/subPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subPage2019.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2019.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subPage2020.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2020.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,19 +53,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/PageTransitions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\css" />
-      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\js" />
-      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox" />
+      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\css" />
+      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\js" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.mainPage.html">
@@ -119,7 +114,7 @@
       <workItem from="1601894006132" duration="5370000" />
       <workItem from="1601899756203" duration="191000" />
       <workItem from="1601900145470" duration="22048000" />
-      <workItem from="1601958800084" duration="10110000" />
+      <workItem from="1601958800084" duration="13273000" />
     </task>
     <servers />
   </component>
