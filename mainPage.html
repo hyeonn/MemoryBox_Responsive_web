@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>기억저장소</title>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Hi+Melody&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/vicons/vicons-font.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <style>
         /*font-family: 'Amatic SC', cursive;*/
         /*font-family: 'Sacramento', cursive;*/
@@ -85,6 +89,13 @@
             top: 10.16%;
 
         }
+
+        .content{
+            position: absolute;
+            left: 82%;
+            top: 65%;
+        }
+
         . openmenu{
             cursor: pointer;
             transition:0.5s ease-in-out;
@@ -92,6 +103,82 @@
         . openmenu:hover{
             transition:0.5s ease-in-out;
         }
+
+        #playerb{
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 6%;
+            top: 15%;
+            overflow-y:hidden;
+            background: rgb(126 115 105 / 50%);
+            backdrop-filter: blur(20px);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-family: Amatic SC;
+            font-style: normal;
+            font-weight: normal;
+            z-index:1;
+            overflow-x: hidden;
+            transition:0.5s ease-in-out;
+        }
+
+        #ytplayer{
+            position: absolute;
+            top: 20%;
+
+        }
+
+        #profile{
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 6%;
+            top: 15%;
+            overflow-y:hidden;
+            background: rgb(126 115 105 / 50%);
+            backdrop-filter: blur(20px);
+            display: flex;
+            font-style: normal;
+            font-weight: normal;
+            z-index:1;
+            overflow-x: hidden;
+            transition:0.5s ease-in-out;
+        }
+
+        .profile{
+            font-family: 'Gamja Flower', cursive;
+        }
+
+        .profile h2{
+            font-size: 40px;
+            margin-bottom: 1px;
+        }
+
+        .profile h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .profile p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .profilePhoto{
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            top: 25%;
+            left: 9%;
+        }
+        .profileContnet{
+            position: absolute;
+            top: 25%;
+            left: 45%;
+        }
+
+
         .navbar{
             position: absolute;
             width: 0;
@@ -215,20 +302,29 @@
             position: absolute;
 
             left: 94.8%;
-            top: 6.5%;
-
-            width: 35px;
-            height: 35px;
+            top: 6.1%;
+            width: 30px;
+            height: 30px;
         }
         #play{
             display: block;
             position: absolute;
 
-            left: 92%;
-            top: 6.84%;
+            left: 63.5%;
+            top: 27%;
             bottom: 90.23%;
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
+        }
+        #pause{
+            display: block;
+            position: absolute;
+
+            left: 65.4%;
+            top: 27%;
+            bottom: 90.23%;
+            width: 20px;
+            height: 20px;
         }
 
 
@@ -236,9 +332,9 @@
 
         }
 
-        #ytplayer{
-            display: none;
-        }
+
+
+
 
         @media screen and (max-width: 834px) {
 
@@ -409,7 +505,7 @@
 <body>
 <div class="container">
         <div class="snow">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 655" preserveAspectRatio="xMidYMax slice">
                 <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
                     <g id="snow-bottom-layer">
                         <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"/>
@@ -486,13 +582,63 @@
             <div id="title">
                 <h1 class="overlay">Memory box</h1>
             </div>
-        <a onclick="playVideo()"><img id="play" src="img/play-button.png" ></a>
-        <a ><img id="me" src="img/rabbit.png" ></a>
-
+        <a onclick="playVideo()"><img id="play" src="img/play.png" ></a>
+        <a onclick="pauseVideo()"><img id="pause" src="img/pause.png" ></a>
     </header>
 
-            <div id="ytplayer"></div>
+    <!-- profile -->
+    <div id="profile">
+        <div class="profile">
+            <img class="profilePhoto" src="img/mypt.jpg">
+            <div class="profileContnet">
+                <h2>임이현</h2>
+                <h3>스물셋</h3>
+                <h3>좋아하는 것:</h3>
+                <p>맛있는거 먹기, 산책하기, 소품샵 구경하기, 영화보기, 귀여운거(예를 들면 고양이)</p>
+                <h3>취미:</h3>
+                <p>귀여운거 모으기</p>
+                <h3>장래희망:</h3>
+                <p>제주도 할머니</p>
+            </div>
+        </div>
+    </div>
 
+<!--YT player-->
+    <div id="playerb">
+        <div id="ytplayer"></div>
+    </div>
+
+
+<!-- button -->
+    <div class="content">
+        <div class="menu" style="z-index: 2;">
+            <div class="menu-wrapper">
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <button onClick="closeP()" class="menu-item-button">
+                            <i class="menu-item-icon icon icon-reply"></i>
+                        </button>
+                        <div class="menu-item-bounce"></div>
+                    </li>
+                    <li class="menu-item">
+                        <button onClick="profile()" class="menu-item-button">
+                            <i class=" xi-user-o xi xi-flip-vertical"></i>
+                        </button>
+                        <div class="menu-item-bounce"></div>
+                    </li>
+                    <li class="menu-item">
+                        <button onClick="openplayer()" class="menu-item-button">
+                            <i class="menu-item-icon icon icon-box"></i>
+                        </button>
+                        <div class="menu-item-bounce"></div>
+                    </li>
+                </ul>
+                <button class="menu-toggle-button">
+                    <i class="fa fa-plus menu-toggle-icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
 
     <nav class="navbar" id="sidenav">
@@ -519,7 +665,9 @@
 <footer id="ftr">
     <p>e hyeon lim</p>
 </footer>
-
+<script src="js/jquery.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/menu.js"></script>
 
 </body>
 <script>
@@ -536,12 +684,20 @@
         player = new YT.Player('ytplayer', {
             height: '360',
             width: '640',
-            videoId: 'fOiwyjLpuRI'
+            videoId: 'ulr0muQKjk0'
         });
+
     }
+
     function playVideo() {
         player.playVideo();
     }
+    function pauseVideo() {
+        player.pauseVideo();
+    }
+
+
+
 </script>
 <script>
 
@@ -550,12 +706,34 @@
         document.getElementById('menu').style.width = '0px';
 
     }
+
     function closeNav() {
         document.getElementById('sidenav').style.width = '0';
         document.getElementById('menu').style.width = '25px';
+    }
 
+    function profile() {
+        document.getElementById('profile').style.width = '1180px';
+        document.getElementById('profile').style.height = '660px';
+        document.getElementById('playerb').style.width = '0';
+        document.getElementById('playerb').style.height = '0';
+
+    }
+    function closeP() {
+        document.getElementById('profile').style.width = '0';
+        document.getElementById('profile').style.height = '0';
+        document.getElementById('playerb').style.width = '0';
+        document.getElementById('playerb').style.height = '0';
+
+    }
+    function openplayer(){
+        document.getElementById('profile').style.width = '0';
+        document.getElementById('profile').style.height = '0';
+        document.getElementById('playerb').style.width = '1180px';
+        document.getElementById('playerb').style.height = '660px';
 
 
     }
+
 </script>
 </html>

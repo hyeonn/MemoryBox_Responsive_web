@@ -275,6 +275,33 @@
             font-size: 0;
         }
 
+        #play{
+            display: block;
+            position: absolute;
+
+            left: 90%;
+            top: 6.84%;
+            bottom: 90.23%;
+            width: 20px;
+            height: 20px;
+        }
+        #pause{
+            display: block;
+            position: absolute;
+
+            left: 92.3%;
+            top: 6.84%;
+            bottom: 90.23%;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        #ytplayer{
+            display: none;
+
+        }
+
         @media screen and (max-width: 834px) {
 
             body .container {
@@ -547,6 +574,9 @@
 <div class="container">
     <header>
         <a class="openmenu" onclick='openNav()'><img id="menu" src="img/menu.png" ></a>
+        <a onclick="playVideo()"><img id="play" src="img/play.png" ></a>
+        <a onclick="pauseVideo()"><img id="pause" src="img/pause.png" ></a>
+
         <div id="title">
             <a class="title" href="mainPage.html">Memory box</a>
         </div>
@@ -563,6 +593,7 @@
                 2019
             </h2>
             <h2 id="col">-Moments of 2019-</h2>
+
 
             <div class="boxes">
                 <div class="box">
@@ -620,7 +651,7 @@
             <div id="boardspace"></div>
 
         </div>
-
+        <div id="ytplayer"></div>
 
 
     </section>
@@ -652,6 +683,35 @@
 
 
 </body>
+<script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('ytplayer', {
+            height: '360',
+            width: '640',
+            videoId: 'ulr0muQKjk0'
+        });
+
+    }
+
+    function playVideo() {
+        player.playVideo();
+    }
+    function pauseVideo() {
+        player.pauseVideo();
+    }
+
+
+
+</script>
 <script>
     function openNav() {
         document.getElementById('sidenav').style.width = '352px';

@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5676f0e9-de40-43dd-99e6-f18d12706534" name="Default Changelist" comment="" />
+    <list default="true" id="5676f0e9-de40-43dd-99e6-f18d12706534" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subPage2019.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2019.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +40,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,36 +58,47 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/PageTransitions" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\css" />
+      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\js" />
+      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox\img" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hyeon\WebstormProjects\MemoryBox" />
-    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.mainPage.html">
-    <configuration name="mainPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainPage.html" useBuiltInWebServerPort="true">
+    <configuration name="bestMoment.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/bestMoment.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="firebase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/firebase.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="mainPage2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainPage2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="mainPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/test.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="youtubeAPI.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/youtubeAPI.html" useBuiltInWebServerPort="true">
+    <configuration name="mainPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MemoryBox/mainPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.mainPage.html" />
-        <item itemvalue="JavaScript Debug.youtubeAPI.html" />
-        <item itemvalue="JavaScript Debug.test.html" />
-        <item itemvalue="JavaScript Debug.mainPage.html" />
+        <item itemvalue="JavaScript Debug.firebase.html" />
+        <item itemvalue="JavaScript Debug.bestMoment.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.mainPage2.html" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +118,8 @@
       <workItem from="1601518706795" duration="7764000" />
       <workItem from="1601894006132" duration="5370000" />
       <workItem from="1601899756203" duration="191000" />
-      <workItem from="1601900145470" duration="3972000" />
+      <workItem from="1601900145470" duration="22048000" />
+      <workItem from="1601958800084" duration="10110000" />
     </task>
     <servers />
   </component>
@@ -114,10 +139,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601539060179">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601929480164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601539060179" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601929480164" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601971533972">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601971533972" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1601307050306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -182,9 +211,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1601307050307" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1600767619591">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1601934556056">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600767619591" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601934556056" />
   </component>
 </project>
