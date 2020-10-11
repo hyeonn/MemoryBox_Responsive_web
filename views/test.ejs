@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+</head>
+<h1>Firebase Test</h1>
+<p>Firebase console에 데이터가 추가 되었는지 확인하세요!</p>
+<script>
+    // Initialize Firebase
+    var config  = {
+        apiKey: "AIzaSyDAhNwNKmZTjx0cR4lyTKIAbTfqSf4E_p0",
+        authDomain: "memorybox-cfcd8.firebaseapp.com",
+        databaseURL: "https://memorybox-cfcd8.firebaseio.com",
+        storageBucket: "memorybox-cfcd8.appspot.com",
+
+    }
+    firebase.initializeApp(config );
+    // Get a reference to the database service
+    var database = firebase.database();
+
+
+    function writeNewPost(uid, username, picture, title, body) {
+        // A post entry.
+        var postData = {
+            author: username,
+            uid: uid,
+            body: body,
+            title: title,
+            starCount: 0,
+            authorPic: picture
+        };
+
+        // Get a key for a new Post.
+        var newPostKey = firebase.database().ref().child('posts').push().key;
+
+        // Write the new post's data simultaneously in the posts list and the user's post list.
+        var updates = {};
+        updates['/posts/' + newPostKey] = postData;
+        updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+        return firebase.database().ref().update(updates);
+    }
+
+
+</script>

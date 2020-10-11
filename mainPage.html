@@ -166,11 +166,9 @@
             margin-bottom: 10px;
         }
         .profilePhoto{
-            position: absolute;
             width: 350px;
             height: 350px;
-            top: 25%;
-            left: 9%;
+
         }
         .profileContnet{
             position: absolute;
@@ -180,6 +178,7 @@
 
 
         .navbar{
+            overflow-y: hidden;
             position: absolute;
             width: 0;
             height: 985px;
@@ -329,9 +328,66 @@
 
 
         #year{
-
+            margin-bottom: 0;
         }
 
+        ul,li{
+            list-style:none;
+            padding: 0;
+            margin: 0;
+        }
+        .slide{
+            position: absolute;
+            top: 25%;
+            left: 9%;
+            width: 350px;
+            height: 350px;
+            overflow:hidden;
+
+        }
+        .slide li{
+            position:absolute;left:0;right:0;top:0;bottom:0;
+            opacity:0;
+            transition:1s;
+        }
+
+        .slide li:nth-child(4){
+            background:#faa;
+        }
+        .slide input{
+            display:none;
+        }
+        .slide .bullet{
+            position:absolute;
+            bottom:20px;
+            left:0;
+            right:0;
+            text-align:center;
+            z-index:10;
+        }
+        .slide .bullet label{
+            width:10px;
+            height:10px;
+            border-radius:10px;
+            border:2px solid #faa;
+            display:inline-block;
+            background:#fff;
+            font-size:0;
+            transition:0.5s;
+            cursor:pointer;
+        }
+
+        /* 슬라이드 조작 */
+        #pos1:checked ~ ul li:nth-child(1),
+        #pos2:checked ~ ul li:nth-child(2),
+        #pos3:checked ~ ul li:nth-child(3),
+        #pos4:checked ~ ul li:nth-child(4){opacity:1;}
+
+        /* bullet 조작 */
+        #pos1:checked ~ .bullet label:nth-child(1),
+        #pos2:checked ~ .bullet label:nth-child(2),
+        #pos3:checked ~ .bullet label:nth-child(3),
+        #pos4:checked ~ .bullet label:nth-child(4){background:#faa;}
 
 
 
@@ -589,7 +645,27 @@
     <!-- profile -->
     <div id="profile">
         <div class="profile">
-            <img class="profilePhoto" src="img/mypt.jpg">
+            <div class="slide">
+                <input type="radio" name="pos" id="pos1" checked>
+                <input type="radio" name="pos" id="pos2">
+                <input type="radio" name="pos" id="pos3">
+                <input type="radio" name="pos" id="pos4">
+
+                <ul>
+                    <li><img class="profilePhoto" src="img/mypt.jpg"></li>
+                    <li><img class="profilePhoto" src="img/profile2.jpg"></li>
+                    <li><img class="profilePhoto" src="img/mooon.jpg"></li>
+                    <li></li>
+                </ul>
+                <p class="bullet">
+                    <label for="pos1">1</label>
+                    <label for="pos2">2</label>
+                    <label for="pos3">3</label>
+                    <label for="pos4">4</label>
+
+                </p>
+            </div>
+
             <div class="profileContnet">
                 <h2>임이현</h2>
                 <h3>스물셋</h3>
@@ -654,7 +730,8 @@
             <img id="arrow" src="img/down-arrow.png">
         </ul>
         <ul class="collect">
-        <li><a href="#">best moment</a></li>
+            <li><a href="#">best moment</a></li>
+            <li><a href="#">baby hyeon</a></li>
         </ul>
 
     </nav>
