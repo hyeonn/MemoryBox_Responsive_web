@@ -9,7 +9,7 @@ body .container {
     margin: 0;
     background-image: url("img/mainNav.png");
     background-repeat: no-repeat;
-    width: 1536px;
+    width: 1514px;
     height: 985px;
     background-size: cover;
 
@@ -77,6 +77,13 @@ header h1{
     top: 10.16%;
 
 }
+
+.content{
+    position: fixed;
+    left: 82%;
+    top: 65%;
+}
+
 . openmenu{
     cursor: pointer;
     transition:0.5s ease-in-out;
@@ -84,7 +91,82 @@ header h1{
 . openmenu:hover{
     transition:0.5s ease-in-out;
 }
+
+#playerb{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 6%;
+    top: 15%;
+    overflow-y:hidden;
+    background: rgb(126 115 105 / 50%);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: normal;
+    z-index:1;
+    overflow-x: hidden;
+    transition:0.5s ease-in-out;
+}
+
+#ytplayer{
+    position: absolute;
+    top: 20%;
+
+}
+
+#profile{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 6%;
+    top: 15%;
+    overflow-y:hidden;
+    background: rgb(126 115 105 / 50%);
+    backdrop-filter: blur(20px);
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    z-index:1;
+    overflow-x: hidden;
+    transition:0.5s ease-in-out;
+}
+
+.profile{
+    font-family: 'Gamja Flower', cursive;
+}
+
+.profile h2{
+    font-size: 40px;
+    margin-bottom: 1px;
+}
+
+.profile h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.profile p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profilePhoto{
+    width: 350px;
+    height: 350px;
+
+}
+.profileContnet{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+
 .navbar{
+    overflow-y: hidden;
     position: absolute;
     width: 0;
     height: 985px;
@@ -158,8 +240,8 @@ footer{
     position: absolute;
     width: 126px;
     height: 53px;
-    left: 1300px;
-    top: 880px;
+    left: 1220px;
+    top: 865px;
     font-size: 36px;
     line-height: 53px;
 }
@@ -177,7 +259,7 @@ footer{
 }
 #menu{
     display: block;
-    position: absolute;
+    position: fixed;
     left: 2.43%;
     right: 95.49%;
     top: 6.84%;
@@ -215,8 +297,8 @@ footer{
     display: block;
     position: absolute;
 
-    left: 90%;
-    top: 6.84%;
+    left: 64.5%;
+    top: 27.6%;
     bottom: 90.23%;
     width: 20px;
     height: 20px;
@@ -225,8 +307,8 @@ footer{
     display: block;
     position: absolute;
 
-    left: 92.3%;
-    top: 6.84%;
+    left: 66.4%;
+    top: 27.6%;
     bottom: 90.23%;
     width: 20px;
     height: 20px;
@@ -234,13 +316,88 @@ footer{
 
 
 #year{
-
+    margin-bottom: 0;
 }
 
-#ytplayer{
-    display: none;
+ul,li{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+.slide{
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    width: 350px;
+    height: 350px;
+    overflow:hidden;
+
+}
+.slide li{
+    position:absolute;left:0;right:0;top:0;bottom:0;
+    opacity:0;
+    transition:1s;
 }
 
+.slide li:nth-child(4){
+    background:#faa;
+}
+.slide input{
+    display:none;
+}
+.slide .bullet{
+    position:absolute;
+    bottom:20px;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index:10;
+}
+.slide .bullet label{
+    width:10px;
+    height:10px;
+    border-radius:10px;
+    border:2px solid #faa;
+    display:inline-block;
+    background:#fff;
+    font-size:0;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+/* 슬라이드 조작 */
+#pos1:checked ~ ul li:nth-child(1),
+#pos2:checked ~ ul li:nth-child(2),
+#pos3:checked ~ ul li:nth-child(3),
+#pos4:checked ~ ul li:nth-child(4){opacity:1;}
+
+/* bullet 조작 */
+#pos1:checked ~ .bullet label:nth-child(1),
+#pos2:checked ~ .bullet label:nth-child(2),
+#pos3:checked ~ .bullet label:nth-child(3),
+#pos4:checked ~ .bullet label:nth-child(4){background:#faa;}
+
+
+@media screen and (max-width: 1140px) {
+    #play {
+        position: fixed;
+        left: 68.5%;
+    }
+
+    #pause {
+        position: fixed;
+        left: 71%;
+    }
+
+    .content {
+        left: 73%;
+
+    }
+
+    #ytplayer{
+        left: 13%;
+    }
+}
 @media screen and (max-width: 834px) {
 
     body .container {
@@ -267,6 +424,47 @@ footer{
         left: 36%;
         top: 9%;
 
+    }
+    #profile{
+
+        left: 6%;
+        top: 15%;
+        overflow-y:hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+    .slide{
+
+        top: 30%;
+        left: 5%;
+        width: 250px;
+        height: 250px;
+
+
+    }
+
+    .profile h2{
+        font-size: 35px;
+        margin-bottom: 1px;
+    }
+
+    .profile h3{
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .profilePhoto{
+        width: 250px;
+        height: 250px;
+
+    }
+    .profileContnet{
+        position: absolute;
+        top: 25%;
+        left: 28%;
     }
 
     #menu{
@@ -320,14 +518,55 @@ footer{
         color: #222224;
         line-height: 80px;
     }
-
-
-
+    #play{
+        left: 67.5%;
+        top: 26.5%;
+    }
+    #pause{
+        left: 71%;
+        top: 26.5%;
+    }
+    .content{
+        left: 67%;
+        top: 65%;
+    }
+    #ytplayer{
+        left: 8%;
+        width: 500px;
+        height: 278px;
+    }
 
 
 }
 
-@media screen and (max-width: 414px) {
+
+    @media screen and (max-width: 743px) {
+        #play{
+            left: 88%;
+            top: 5%;
+        }
+        #pause{
+            left: 93%;
+            top: 5%;
+
+        }
+
+        .content{
+            left: 60%;
+            top: 65%;
+        }
+
+        #ytplayer{
+
+            left: 5%;
+            width: 460px;
+            height: 250px;
+        }
+
+
+    }
+
+    @media screen and (max-width: 414px) {
     body .container {
         display: flex;
         margin: 0;
@@ -395,7 +634,35 @@ footer{
         color: #222224;
         line-height: 80px;
     }
+        #play{
+            left: 86.5%;
+            top: 5%;
+            width: 15px;
+            height: 15px;
+        }
+        #pause{
+            left: 92.5%;
+            top: 5%;
+            width: 15px;
+            height: 15px;
+        }
+
+        .content{
+            left: 10%;
+            top: 50%;
+        }
+        #ytplayer{
+            top: 10%;
+            left: 2%;
+            width: 300px;
+            height: 160px;
+        }
 }
+
+
+
+
+
 
 
 

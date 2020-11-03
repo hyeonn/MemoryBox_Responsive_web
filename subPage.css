@@ -342,10 +342,6 @@ nav h5{
         flex-direction: column;
 
 
-
-
-
-
     }
 
     .content h2{
@@ -418,6 +414,13 @@ nav h5{
     .content #boardspace{
         width: 0;
         height: 0;
+    }
+
+    #play{
+        left: 88%;
+    }
+    #pause{
+        left: 92.3%;
     }
 
 
@@ -550,6 +553,20 @@ nav h5{
         width: 0px;
         height: 0px;
 
+    }
+
+
+    #play{
+        left: 86%;
+        top: 4%;
+        width: 15px;
+        height: 15px;
+    }
+    #pause{
+        left: 91%;
+        top: 4%;
+        width: 15px;
+        height: 15px;
     }
 
 
