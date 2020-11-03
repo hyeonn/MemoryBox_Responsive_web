@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5676f0e9-de40-43dd-99e6-f18d12706534" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/subPage2020_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subPage2017.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subPage_babyhyeon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subPage_favorite.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/subPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subPage2018.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2018.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subPage2019.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2019.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subPage2020.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2020.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subPage2020_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/subPage2020_2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,7 @@
       <workItem from="1601958800084" duration="14936000" />
       <workItem from="1602395736401" duration="8991000" />
       <workItem from="1602423507452" duration="714000" />
-      <workItem from="1604375405317" duration="13883000" />
+      <workItem from="1604375405317" duration="18756000" />
     </task>
     <servers />
   </component>
@@ -139,15 +138,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601987861710">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604403113447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601987861709" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604388081824">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604403113447" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604403077206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604388081824" />
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601971533972" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604403077206" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1602063868043">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
